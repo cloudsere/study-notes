@@ -35,7 +35,7 @@ for f in glob.glob('*-*.xls'):
 	df = pd.read_excel(f,header = 2)
 	base = os.path.basename(f)
 	name = os.path.splitext(base)
-	df.index = [name[0]] * len(df)
+	df.index = [name[0]] * len(df) #这里主要是为了给每一行数据增加来源文件的信息
 	df.to_csv(name[0] + '.csv')
 ```
 
