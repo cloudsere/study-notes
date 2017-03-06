@@ -2,12 +2,17 @@
 
 在响应式开发中经常见到的是：```<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">```
 
+如果不加上这个标签，很容易出现这种情况：
+
+![desk-vs-mobile](/Users/heqingqiu/Desktop/playmyself/study-notes/img/desk-vs-mobile.png)
+
 什么viewport和device-width等等我都特别不懂，所以特别写一个读书笔记。。期望自己可以弄懂吧。
 
 ### device pixels vs CSS pixels
 
 * device pixels是设备的物理像素，可以通过```screen.width/screen.height```获取
-* CSS pixels是CSS样式表中写的 ‘px'
+* CSS pixels是CSS样式表中写的 ‘px'，顺带一提，css一共有15个单位。。
+  ![css-unit](/Users/heqingqiu/Desktop/playmyself/study-notes/img/css-unit.png)
 * 在缩放比例为100%时，1个CSS pixel = 1个device pixel
 
 ### screen size
@@ -32,6 +37,8 @@ viewport是用来限定```<html>```元素的，为什么要限定呢？
 
 > 比如一个块级元素宽度为10%，那么你也知道10%实际上是父级元素宽度的10%。但是你并没有设置父级元素的宽度啊，好吧，你也知道父级元素的宽度与其父级元素宽度一样（通过继承得来，假设这些元素都是块级元素）。然后向上到body元素的宽度，最终为html元素的宽度，其值可以通过 `document.documentElement.clientWidth` 获取
 
+在css的单位中还有一种叫做```vh/vw```的，是把整个viewport划分为100 * 100的网格，比如50vw就是viewport的一半。
+
 ### ちょっとまっで！（等一下）
 
 到这里我已经有点晕了，什么是```window```什么是```viewport```什么是```document```，虽然看了各种高度但还是很难懂。。。
@@ -40,7 +47,7 @@ viewport是用来限定```<html>```元素的，为什么要限定呢？
 
   * 用```window.innerWidth/Height```去获取，包括滚动条
 
-  *  `document.documentElement.clientWidth/Height`也可以获取，但是不包括滚动条。而且可以用element.clientHeight来获取其他元素的宽高
+  * `document.documentElement.clientWidth/Height`也可以获取，但是不包括滚动条。而且可以用element.clientHeight来获取其他元素的宽高
 
   * 到底为什么要有两对属性啊！摔！浏览器大战害死个人
 
