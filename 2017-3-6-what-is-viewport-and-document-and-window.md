@@ -4,7 +4,7 @@
 
 如果不加上这个标签，很容易出现这种情况：
 
-![desk-vs-mobile](/Users/heqingqiu/Desktop/playmyself/study-notes/img/desk-vs-mobile.png)
+![desk-vs-mobile](https://github.com/cloudsere/study-notes/blob/master/img/desk-vs-mobile.png?raw=true)
 
 什么viewport和device-width等等我都特别不懂，所以特别写一个读书笔记。。期望自己可以弄懂吧。
 
@@ -12,7 +12,7 @@
 
 * device pixels是设备的物理像素，可以通过```screen.width/screen.height```获取
 * CSS pixels是CSS样式表中写的 ‘px'，顺带一提，css一共有15个单位。。
-  ![css-unit](/Users/heqingqiu/Desktop/playmyself/study-notes/img/css-unit.png)
+  ![css-unit](https://github.com/cloudsere/study-notes/blob/master/img/css-unit.png?raw=true)
 * 在缩放比例为100%时，1个CSS pixel = 1个device pixel
 
 ### screen size
