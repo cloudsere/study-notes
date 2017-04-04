@@ -47,6 +47,13 @@
 <meta http-equiv = 'refresh' content = '5'>
 <!-- 2秒以后跳转到首页，可以用来实现‘登陆成功，正在跳转到您之前访问页面’-->
 <meta http-equiv = "refresh" content = "2;url='/'">
+
+<!--设定网页到期时间，一旦到期必须从服务器重新传输-->
+<meta http-equiv = 'expires' content = 'Wed, 20 Jun 2016 22:33:00 GMT'>
+
+<!--禁止页面缓存，比如页面有计数器 -->
+<meta http-equiv='cache-control' content='no-cache'>
+
 ```
 
 * 章节内容

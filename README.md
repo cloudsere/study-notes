@@ -16,3 +16,10 @@ python pandas把excel转为csv，再用linux的```cat *.csv > output.csv```合�
 
 用grunt压缩第一个css和uglify第一个js
 
+### [5.HTML语义化](https://github.com/cloudsere/study-notes/blob/master/2017-3-30-semantic-html.md)
+
+一些关于web语义化的笔记
+
+### [6.綺麗なウェブサイト](https://github.com/cloudsere/study-notes/blob/master/2017-4-4-beautiful-web-sites.md)
+
+漂亮的网站收集，大部分是和风的，因为我喜欢那种有点复古的、有点怀旧的、内敛的、历久弥新的美好呀。
